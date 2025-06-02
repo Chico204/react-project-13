@@ -29,12 +29,12 @@ const Submenu = () => {
    <aside
   className={`absolute top-16 left-1/2 -translate-x-1/2 z-30 bg-white shadow-lg p-8 rounded-md transition-all duration-300 ease-in-out w-[600px] ${
     isSubmenuOpen ? 'block' : 'hidden'
-  } relative`}
+  } `}
   ref={container}
 >
-  <span className="absolute top-[-5px] left-1/2 -translate-x-1/2 w-0 h-0 border-l-[5px] border-l-transparent border-r-[5px] border-r-transparent border-b-[5px] border-b-[var(--clr-white)]" />
+  <span className="absolute top-[-5px] left-1/2 -translate-x-1/2 w-0 h-0 border-l-[5px] border-l-transparent border-r-[5px] border-r-transparent border-b-[5px] border-b-white" />
  <section>
-  <h4 className='capitalize text-2xl mb-4'>{page}</h4>
+  <h4 className='capitalize text-2xl mb-4 text-purple-900'>{page}</h4>
   <div
   className={`grid gap-y-1 gap-x-8 ${
     columns === 'col-2'

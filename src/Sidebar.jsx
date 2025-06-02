@@ -17,7 +17,7 @@ const Sidebar = () => {
             const {links,page} = item
             return(
               <article className='mb-8' key={index}>
-                <h4 className='capitalize text-xl'>{page}</h4>
+                <h4 className='capitalize text-xl  text-purple-900'>{page}</h4>
                 <div className='sidebar-sublinks grid grid-cols-[1fr_1fr] '>
                   {links.map((link, index)=>{
                     const{url, icon , label}= link
